@@ -1,0 +1,101 @@
+:root {
+    --main-background: #000;
+    --button-background: #777;
+    --accent-color: #fefe00;
+}
+
+body {
+    background-color: #000000;
+}
+
+p {
+    color: #fff;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#dake {
+    position:absolute;
+    bottom: 1vh;
+}
+
+#dakeImg:hover {
+    animation: hoverDake 0.5s forwards;
+}
+
+@keyframes hoverDake {
+    from {
+        width: 100%;
+        height: auto;
+    }
+    to {
+        width: 120%;
+        height: auto;
+    }
+}
+
+img {
+    width:100%;
+    height:auto;
+}
+
+#mainBox {
+    position: fixed;
+    text-align: center;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.button {
+    color:white;
+    width: auto;
+    height: 15pt;
+    padding: .6rem 1.2rem;
+    background: var(--button-background);
+    border-radius: 1px;
+    border-color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+a.link.yel {
+    animation-name: yel;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+a.link.whi {
+    animation-name: whi;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes yel {
+    from {
+        color: white;
+    }
+    to {
+        color: var(--accent-color);
+    }
+}
+
+@keyframes whi {
+    from {
+        color: var(--accent-color);
+    }
+    to {
+        color: white;
+    }
+}
