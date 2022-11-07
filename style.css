@@ -1,6 +1,7 @@
 :root {
     --main-background: #000;
     --button-background: #777;
+    --hovered-button: #444;
     --accent-color: #fefe00;
 }
 
@@ -8,8 +9,14 @@ body {
     background-color: #000000;
 }
 
+button {
+    border: none;
+    background: none;
+}
+
 p {
     color: #fff;
+    font-family: Roboto;
 }
 
 .center {
@@ -18,12 +25,42 @@ p {
     transform: translate(-50%, -50%);
 }
 
-#dake {
-    position:absolute;
+.midTop {
+    text-align: center;
+}
+
+#quote {
+    font-style: italic;
+}
+
+#activationText {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+}
+
+#bottomRight {
+    display: flex;
+    position: absolute;
     bottom: 1vh;
 }
 
-#dakeImg:hover {
+#dakeText {
+    padding-left: 14vh;
+    opacity: 0;
+}
+
+#dakeButton {
+    border: none;
+    background: none;
+}
+
+.following {
+    position: absolute;
+    text-align: center;
+}
+
+.dakeImg:hover {
     animation: hoverDake 0.5s forwards;
 }
 
@@ -33,7 +70,7 @@ p {
         height: auto;
     }
     to {
-        width: 120%;
+        width: 300%;
         height: auto;
     }
 }
@@ -51,26 +88,25 @@ img {
 #buttons {
     display: flex;
     align-items: center;
-    gap: .8rem;
+    flex-wrap: wrap;
+    gap: .6rem;
 }
 
 .button {
     color:white;
-    width: auto;
-    height: 15pt;
+    width: 5.5rem;
+    height: 1.3rem;
     padding: .6rem 1.2rem;
+    flex: 1 0 40%;
     background: var(--button-background);
     border-radius: 1px;
     border-color: white;
 }
 
-a:link {
+a {
     text-decoration: none;
 }
 
-a:visited {
-    text-decoration: none;
-}
 a.link.yel {
     animation-name: yel;
     animation-duration: .5s;
@@ -85,17 +121,21 @@ a.link.whi {
 @keyframes yel {
     from {
         color: white;
+        background: var(--button-background);
     }
     to {
         color: var(--accent-color);
+        background: var(--hovered-button);
     }
 }
 
 @keyframes whi {
     from {
         color: var(--accent-color);
+        background: var(--hovered-button);
     }
     to {
         color: white;
+        background: var(--button-background);
     }
 }
