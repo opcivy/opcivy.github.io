@@ -1,5 +1,5 @@
 // loading animation
-let buttons = gsap.from('.button', {opacity:0, ease:"power1.out", y:"3vw", duration:2});
+let buttons = gsap.from('.button', {opacity:0, ease:"power1.out", y:"3vw", duration:1.5});
 let title = gsap.from('#titleText', {opacity:0, duration: 1, y:"-3vw", ease:"power1.out"});
 
 // hover color classes
