@@ -12,12 +12,9 @@ $(".link").hover(
     }
 )
 
-let quotes = ["not an anti or a pro-shipper but a third secret thing (adult with job)",
- "\"you should know better\" i dont know ANYTHING!",
- "You've listened to their stories and troubles, but what of your own?"];
+let quotes = ["So please, go pursue \"your own\" freedom and dreams.",
+ "You've listened to their stories and troubles, but what of your own?",
+ "Hand in hand let's make a promise, never take it back.",
+ "We were always held together, never let us part."];
 let select = quotes[Math.floor(Math.random() * quotes.length)];
 $("#quote").html(select);
-
-let names = ["azzy", "ivy", "vi"];
-let nameSelect = names[Math.floor(Math.random() * names.length)];
-$("#name").html(nameSelect);
