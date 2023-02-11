@@ -5,9 +5,14 @@
     --accent-color: #fefe00;
 }
 
+@font-face {
+    font-family: Pixelary;
+    src: url("./assets/Pixelary-Letter.otf") format("opentype");
+}
+
 a {
     text-decoration: none;
-    font-family: Roboto;
+    font-family: Pixelary;
 }
 
 a.link.yel {
@@ -28,7 +33,7 @@ body {
 
 p {
     color: #fff;
-    font-family: Roboto;
+    font-family: Pixelary;
 }
 
 #titleText {
