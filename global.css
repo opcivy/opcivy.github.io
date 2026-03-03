@@ -1,0 +1,17 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #242428;
+        color: #eedcb8;
+    }
+}
+
+html { font-size: 100%; }
+
+body {
+    max-width: 700px;
+    padding: 8px;
+    margin: 0px auto;
+}
+
+p, sub, pre, li { font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace; }
+a { color: #c1ebff; }
